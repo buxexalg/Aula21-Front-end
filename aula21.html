@@ -12,8 +12,8 @@
     <div class="conteudo">
         <div class="adicionarItem">
             <form>
-                <input type="checkbox" id="checkbox-selecionarTodos">
-                <input type="text" placeholder="O que precisa ser feito?" id="input-adicionarTarefas">
+                <input type="checkbox" id="checkboxSelecionarTodos">
+                <input type="text" placeholder="O que precisa ser feito?" id="inputAdicionarTarefas">
             </form>
         </div>
         <div class="itensLista">
@@ -25,11 +25,11 @@
         <div class="footer">
             <span>0 itens a fazer</span> 
             <div class="status-tarefas">
-                <button>Todas</button>
-                <button>A fazer</button>
-                <button>Completadas</button>
+                <button id="botaoTodas" class="ativo">Todas</button>
+                <button id="botaoAFazer">A fazer</button>
+                <button id="botaoCompletadas">Completadas</button>
             </div>
-            <button>Limpar completadas</button>
+            <button id="botaoLimpar">Limpar completadas</button>
         </div>
     </div>
     <script src="aula21.js"></script>

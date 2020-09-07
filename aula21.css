@@ -13,7 +13,6 @@ body {
     margin: 1em;
 }
 
-/* Pq ao colocar width 600px ele alinha a esquerda?*/
 h1 {
     color: palevioletred;
     width: 600px;
@@ -31,21 +30,34 @@ h1 {
     display: flex;
 }
 
-#input-adicionarTarefas {
+#inputAdicionarTarefas {
     flex-grow: 1;
     font-size: 1.5em;
     margin-left: 0.5em;
     padding: 0.2em;
+    
 }
 
-#checkbox-selecionarTodos {
+#checkboxSelecionarTodos {
     margin: 0;
-    
+    align-self: center;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }    
+
+li:hover button {
+	visibility: visible;
+}
+
+
+li button {
+	visibility: hidden;
+	margin-left: auto;
+	color: palevioletred;
+}
 
 .footer {
     display: flex;
@@ -53,7 +65,36 @@ ul {
     justify-content: space-between;
 }
 
-.status-tarefas button {
+button {
     border: none;
     background-color: transparent;
+}
+
+.aFazer, .feitos {
+    font-size: 1.5em;
+    margin: 0.3em;
+}
+
+.aFazer li, .feitos li {
+    display: flex;
+}
+
+.feitos span{
+    text-decoration: line-through;
+}
+
+.ativo {
+    border: 1px solid palevioletred;
+}
+
+.itensLista ul {
+    padding: 0;
+}
+
+.aFazer li span, .feitos li span {
+    margin-left: 10px;
+}
+
+.itensLista {
+    margin-left: -10px;
 }
